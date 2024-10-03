@@ -1,0 +1,16 @@
+<% content_for :title, "Editing friend" %>
+
+<div class="card">  
+  <div class="card-header">
+    <h4>Editing friend</h4>
+  </div>
+  <div class="card-body">
+    <%= render "form", friend: @friend %>
+  </div>
+</div>
+<br>
+<br>
+<div>
+  <%= link_to "Show", @friend, class:"btn btn-dark" %>
+  <%= link_to "Back", :back, class:"btn btn-dark" %>
+</div>

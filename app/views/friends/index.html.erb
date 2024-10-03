@@ -1,0 +1,32 @@
+
+<% content_for :title, "Friends" %>
+
+<% if user_signed_in? %>
+
+  <h1>Friends List</h1>
+
+  <p>Welcome <%= current_user && ", #{current_user.email}" %></p>
+
+  <table class="table table-hover table-bordered table-striped" id="friends">
+    <thead class="table-dark">
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone</th>
+        <th scope="col">Twitter</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+    <% @friends.each do |friend| %>
+      <%= render friend %>    
+    <% end %>
+    </tbody>
+  </table>
+
+  <%= link_to "New friend", new_friend_path, class:"btn btn-dark" %>
+
+<% else %>
+  <h1>Welcome!</h1>    
+  <p>You must log in and create a friends list</p>
+<% end %>
