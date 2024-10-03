@@ -1,24 +1,36 @@
-# README
+# Friends List App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The purpose of this application is to help you better organize your friends' contacts into lists, including names, phone numbers, email addresses, and Twitter handles.
 
-Things you may want to cover:
+## Features
 
-* Ruby version
+- Create and manage contact lists: Group friends into customizable lists.
+- Store essential contact details: Keep track of names, phone numbers, email addresses, and Twitter accounts.
+- Responsive design: Optimized for both desktop and mobile devices.
 
-* System dependencies
+## Technologies Used
+- Ruby on Rails: Backend framework.
+- Erb: Frontend structure and design.
+- Bootstrap: For responsive design and UI components.
 
-* Configuration
+## Installation
 
-* Database creation
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/DiegoCoura/railsfriends.git
+   cd railsfriends 
 
-* Database initialization
+2. Install de required gems: 
+   ```bash
+   bundle install
 
-* How to run the test suite
+3. Set up the database:
+   ```bash
+   rails db:create
+   rails db:migrate
 
-* Services (job queues, cache servers, search engines, etc.)
+4. Start the Rails server:
+   ```bash
+   rails server
 
-* Deployment instructions
-
-* ...
+5. Visit http://localhost:3000 in your browser to use the app.
